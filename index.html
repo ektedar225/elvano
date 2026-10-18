@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Elvano — Canva Pro at Student Prices | ₹599/Year Instant Access</title>
+  <meta name="description" content="Get genuine Canva Pro at student-friendly prices. Unlock 100M+ premium templates, Magic Resize, AI tools and 1TB cloud storage. Instant email delivery within 24 hours." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F4F6FF',
+            cobalt: '#001AFF',
+            navy: '#020F59',
+            ink: '#0A1866',
+            gridline: '#C5D0FF',
+            accent: '#FFB800',
+            emerald: '#059669',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+            hand: ['"Caveat"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Blueprint Paper & Halftone Texture */
+    body {
+      background-color: #F4F6FF;
+      color: #020F59;
+      background-image: 
+        linear-gradient(to right, rgba(0, 26, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 26, 255, 0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Section Divider Lines */
+    .blueprint-border-b {
+      border-bottom: 1.5px solid #B8C5FF;
+    }
+    .blueprint-border-t {
+      border-top: 1.5px solid #B8C5FF;
+    }
+
+    /* Cobalt Blue Duotone & Halftone Image Effect */
+    .cobalt-halftone {
+      filter: url(#cobalt-duotone) contrast(1.15) brightness(1.05);
+      position: relative;
+    }
+    .halftone-dots::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient( rgba(0, 26, 255, 0.28) 1px, transparent 0 );
+      background-size: 4px 4px;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+    }
+
+    /* Keyframe Animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    @keyframes floatReverse {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(8px) translateX(-5px); }
+    }
+    @keyframes pulseStar {
+      0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+      50% { transform: scale(1.2) rotate(15deg); opacity: 1; }
+    }
+    @keyframes spinGlobe {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes marqueeSlide {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -24; }
+    }
+    @keyframes shimmerSweep {
+      0% { transform: translateX(-150%) skewX(-20deg); }
+      100% { transform: translateX(250%) skewX(-20deg); }
+    }
+    @keyframes badgeBounce {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-4px) scale(1.03); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    @keyframes notificationSlide {
+      0% { transform: translateY(100%) scale(0.9); opacity: 0; }
+      15% { transform: translateY(0) scale(1); opacity: 1; }
+      85% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(100%) scale(0.9); opacity: 0; }
+    }
+
+    .animate-float-slow {
+      animation: floatSlow 5.5s ease-in-out infinite;
+    }
+    .animate-float-reverse {
+      animation: floatReverse 4.8s ease-in-out infinite;
+    }
+    .animate-star {
+      animation: pulseStar 3.2s ease-in-out infinite;
+    }
+    .animate-globe {
+      animation: spinGlobe 28s linear infinite;
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeSlide 26s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    .animate-dash {
+      animation: dashFlow 1.2s linear infinite;
+    }
+    .animate-badge-bounce {
+      animation: badgeBounce 3s ease-in-out infinite;
+    }
+    .animate-glow-pulse {
+      animation: glowPulse 4s ease-in-out infinite;
+    }
+
+    /* Scroll Reveal Slide Animations */
+    .reveal {
+      opacity: 0;
+      transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+    .reveal-up { transform: translateY(32px); }
+    .reveal-left { transform: translateX(-36px); }
+    .reveal-right { transform: translateX(36px); }
+    .reveal-scale { transform: scale(0.94); }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+
+    /* Delay Helpers */
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+    .delay-400 { transition-delay: 400ms; }
+
+    /* Button Shimmer Effect */
+    .btn-cobalt {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-cobalt::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: translateX(-150%) skewX(-20deg);
+    }
+    .btn-cobalt:hover::before {
+      animation: shimmerSweep 1s ease-in-out;
+    }
+    .btn-cobalt:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -6px rgba(0, 26, 255, 0.45);
+    }
+    .btn-cobalt:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px -4px rgba(0, 26, 255, 0.4);
+    }
+    .btn-cobalt .arrow-icon {
+      transition: transform 0.25s ease;
+    }
+    .btn-cobalt:hover .arrow-icon {
+      transform: translateX(4px);
+    }
+
+    /* Card Glow on Hover */
+    .hover-card-glow {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    }
+    .hover-card-glow:hover {
+      transform: translateY(-4px);
+      border-color: #001AFF;
+      box-shadow: 0 16px 32px -8px rgba(0, 26, 255, 0.16);
+    }
+
+    /* Smooth Accordion Grid Animation */
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .accordion-content.open {
+      grid-template-rows: 1fr;
+    }
+    .accordion-inner {
+      overflow: hidden;
+    }
+
+    /* Before-After Slider Container */
+    .slider-container {
+      position: relative;
+      user-select: none;
+      touch-action: pan-y;
+      cursor: ew-resize;
+      --slider-pct: 50%;
+    }
+    .slider-after-image {
+      position: absolute;
+      inset: 0;
+      clip-path: inset(0 calc(100% - var(--slider-pct, 50%)) 0 0);
+      pointer-events: none;
+    }
+    .slider-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: var(--slider-pct, 50%);
+      width: 3px;
+      background: #001AFF;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 20;
+    }
+    .slider-handle::after {
+      content: "⟨ ⟩";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #001AFF;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 26, 255, 0.45);
+      border: 2px solid white;
+    }
+
+    /* Custom Mobile Scrollbar for Tables */
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(0, 26, 255, 0.05);
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(0, 26, 255, 0.25);
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #001AFF;
+    }
+
+    /* Canvas Confetti */
+    #confettiCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Sticky Mobile Bottom Bar */
+    .mobile-bottom-bar {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+    }
+
+    /* Video Studio Scrubber Range */
+    input[type=range]#videoProgress {
+      -webkit-appearance: none;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      height: 6px;
+      outline: none;
+      cursor: pointer;
+    }
+    input[type=range]#videoProgress::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #001AFF;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 10px rgba(0, 26, 255, 0.8);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    input[type=range]#videoProgress:hover::-webkit-slider-thumb {
+      transform: scale(1.25);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-cobalt selection:text-white pb-14 md:pb-0">
+
+  <!-- Confetti Canvas for Celebratory Clicks -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Hidden SVG Filter for exact Cobalt Blue Halftone Photo Treatment -->
+  <svg class="hidden" aria-hidden="true">
+    <defs>
+      <filter id="cobalt-duotone">
+        <feColorMatrix type="matrix" values="
+          0.30 0.59 0.11 0 0
+          0.30 0.59 0.11 0 0
+          0.30 0.59 0.11 0 0
+          0    0    0    1 0" result="gray" />
+        <feComponentTransfer in="gray" color-interpolation-filters="sRGB">
+          <feFuncR type="table" tableValues="0.01 0.00 0.35 0.96" />
+          <feFuncG type="table" tableValues="0.05 0.12 0.48 0.97" />
+          <feFuncB type="table" tableValues="0.38 0.98 1.00 1.00" />
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- ================= 0. TOP URGENT ANNOUNCEMENT TICKER ================= -->
+  <div class="bg-navy text-white text-[11px] sm:text-xs font-mono py-2 px-3 sm:px-4 border-b border-cobalt/30 relative z-50 overflow-hidden">
+    <!-- Subtle background pulse light -->
+    <div class="absolute inset-0 bg-gradient-to-r from-cobalt/20 via-transparent to-cobalt/20 animate-pulse pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto flex items-center justify-between relative z-10">
+      <div class="flex items-center gap-2 overflow-hidden">
+        <span class="inline-flex items-center gap-1.5 bg-cobalt px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shrink-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>FLASH OFFER</span>
+        </span>
+        <p class="truncate font-medium text-white/95">
+          <strong>86% OFF:</strong> Canva Pro 1-Year Pass @ <span class="text-amber-300 font-bold">₹599</span> <span class="line-through text-white/50 text-[10px]">₹4,300</span> • Instant Email Delivery
+        </p>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-[11px] text-white/80 shrink-0">
+        <span class="flex items-center gap-1"><span class="text-emerald-400">●</span> 100% Genuine</span>
+        <span>•</span>
+        <span class="flex items-center gap-1"><span class="text-emerald-400">●</span> Avg 15 Min Delivery</span>
+        <span>•</span>
+        <a href="#pricing" class="text-amber-300 font-bold hover:underline">Claim Deal →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 1. NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md blueprint-border-b transition-all duration-300" id="mainHeader">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2.5 group focus:outline-none">
+        <div class="w-8 h-8 rounded-lg bg-cobalt/10 border border-cobalt/40 flex items-center justify-center group-hover:bg-cobalt group-hover:text-white text-cobalt transition">
+          <svg class="w-4 h-4 animate-star" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-serif font-extrabold text-2xl tracking-tight text-cobalt leading-none block">ELVANO</span>
+          <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/60 -mt-0.5 block">STUDENT STORE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-xs font-mono tracking-wider text-ink/80">
+        <a href="#home" class="hover:text-cobalt transition-colors font-medium">HOME</a>
+        <a href="#features" class="hover:text-cobalt transition-colors font-medium">FEATURES</a>
+        <a href="#video-studio" class="hover:text-cobalt transition-colors font-medium flex items-center gap-1">
+          <span>VIDEO</span>
+          <span class="px-1.5 py-0.2 bg-cobalt text-white rounded text-[9px] font-bold">4K</span>
+        </a>
+        <a href="#playground" class="hover:text-cobalt transition-colors font-medium flex items-center gap-1">
+          <span>DEMO</span>
+          <span class="px-1.5 py-0.2 bg-cobalt/10 text-cobalt rounded text-[9px] font-bold">TRY</span>
+        </a>
+        <a href="#pricing" class="hover:text-cobalt transition-colors font-medium">PLANS</a>
+        <a href="#reviews" class="hover:text-cobalt transition-colors font-medium">REVIEWS</a>
+        <a href="#how-it-works" class="hover:text-cobalt transition-colors font-medium">HOW IT WORKS</a>
+        <a href="#faq" class="hover:text-cobalt transition-colors font-medium">FAQ</a>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle Container -->
+      <div class="flex items-center gap-3">
+        <!-- Desktop Primary CTA -->
+        <a href="#pricing" class="btn-cobalt hidden sm:inline-flex bg-cobalt text-white text-xs font-bold tracking-wider px-4 py-2.5 rounded-lg items-center gap-2 shadow-sm">
+          <span>GET CANVA PRO</span>
+          <span class="arrow-icon">→</span>
+        </a>
+
+        <!-- Mobile Quick CTA -->
+        <a href="#pricing" class="btn-cobalt sm:hidden bg-cobalt text-white text-[11px] font-bold px-3 py-2 rounded-md flex items-center gap-1.5 shadow-sm">
+          <span>₹599</span>
+          <span class="arrow-icon text-xs">→</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden w-10 h-10 rounded-lg border border-gridline bg-white/80 text-navy hover:text-cobalt hover:border-cobalt flex flex-col items-center justify-center gap-1.5 transition">
+          <span class="hamburger-line w-5 h-0.5 bg-navy transition-all duration-300 origin-center"></span>
+          <span class="hamburger-line w-5 h-0.5 bg-navy transition-all duration-300"></span>
+          <span class="hamburger-line w-5 h-0.5 bg-navy transition-all duration-300 origin-center"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu (Smooth Slide Down) -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gridline bg-paper/98 backdrop-blur-xl px-4 py-6 transition-all duration-300">
+      <div class="space-y-4">
+        
+        <!-- Live Offer Pill in Mobile Menu -->
+        <div class="bg-cobalt/5 border border-cobalt/20 rounded-lg p-3 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-mono text-xs font-bold text-navy">Campus Pass Special</span>
+          </div>
+          <span class="font-mono text-xs font-extrabold text-cobalt bg-white px-2 py-0.5 rounded border border-cobalt/20">₹599 / Yr</span>
+        </div>
+
+        <nav class="flex flex-col space-y-3 font-mono text-sm tracking-wider text-navy">
+          <a href="#home" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>01 // HOME</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+          <a href="#features" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>02 // PRO FEATURES</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+          <a href="#video-studio" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>03 // 4K VIDEO STUDIO</span>
+            <span class="text-[10px] bg-cobalt text-white px-1.5 py-0.5 rounded font-bold">4K NEW</span>
+          </a>
+          <a href="#playground" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>04 // INTERACTIVE DEMO</span>
+            <span class="text-[10px] bg-cobalt/10 text-cobalt px-1.5 py-0.5 rounded font-bold">DEMO</span>
+          </a>
+          <a href="#pricing" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>05 // PLANS & PRICING</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+          <a href="#reviews" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>06 // STUDENT REVIEWS</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+          <a href="#how-it-works" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>07 // HOW IT WORKS</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+          <a href="#faq" class="mobile-link flex items-center justify-between py-2 border-b border-gridline/50 hover:text-cobalt">
+            <span>08 // FAQ</span>
+            <span class="text-xs text-ink/40">↗</span>
+          </a>
+        </nav>
+
+        <div class="pt-2 space-y-2.5">
+          <a href="#pricing" class="mobile-link btn-cobalt w-full bg-cobalt text-white font-bold text-sm py-3.5 rounded-lg flex items-center justify-center gap-2 shadow-md">
+            <span>CLAIM CANVA PRO @ ₹599</span>
+            <span>→</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20Elvano,%20I%20have%20a%20query%20about%20Canva%20Pro%20student%20plan" target="_blank" rel="noopener noreferrer" class="w-full bg-white border border-gridline hover:border-emerald-500 text-navy font-semibold text-xs py-3 rounded-lg flex items-center justify-center gap-2 transition">
+            <svg class="w-4 h-4 fill-emerald-500" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            <span>Chat on WhatsApp Support</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section id="home" class="relative blueprint-border-b overflow-hidden py-10 sm:py-14 lg:py-18">
+    
+    <!-- Ambient Background Glow Balls -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-cobalt/10 filter blur-3xl pointer-events-none animate-glow-pulse"></div>
+    <div class="absolute top-1/2 -right-20 w-80 h-80 rounded-full bg-cobalt/10 filter blur-3xl pointer-events-none animate-glow-pulse" style="animation-delay: 2s;"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+      
+      <!-- Left Hero Content -->
+      <div class="lg:col-span-6 space-y-5 sm:space-y-6 reveal reveal-left">
+        
+        <!-- Live Activity Pill -->
+        <div class="inline-flex items-center gap-2 bg-white/90 border border-cobalt/30 px-3 py-1.5 rounded-full shadow-sm">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-mono text-[11px] font-bold text-navy tracking-tight">
+            5,120+ Students Enrolled • 4.9★ Verified
+          </span>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-[0.22em] text-cobalt font-semibold">
+          OFFICIAL CANVA PRO — FOR STUDENTS
+        </p>
+
+        <h1 class="font-serif font-bold text-4xl sm:text-6xl lg:text-[66px] leading-[1.04] tracking-tight text-navy">
+          CANVA PRO<br />
+          <span class="text-cobalt relative inline-block">
+            AT STUDENT
+            <!-- Animated decorative underline -->
+            <svg class="absolute -bottom-2 left-0 w-full h-3 text-cobalt/40" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
+              <path d="M2 9C50 3 150 3 198 9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span><br />
+          PRICES.
+        </h1>
+
+        <p class="text-ink/80 text-sm sm:text-lg max-w-lg leading-relaxed">
+          Unlock 100M+ templates, 1-click background remover, Magic Resize, AI Studio, and 1TB storage on your personal account. Pay once, design for an entire year.
+        </p>
+
+        <!-- CTA Row with Shimmer & Confetti Trigger -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1">
+          <a href="#pricing" class="btn-cobalt bg-cobalt text-white font-bold text-sm px-7 py-4 rounded-xl flex items-center justify-center gap-2.5 shadow-lg group">
+            <span>GET CANVA PRO @ ₹599</span>
+            <span class="arrow-icon text-base">→</span>
+          </a>
+          <a href="#playground" class="border-2 border-cobalt/80 text-cobalt bg-white/70 hover:bg-cobalt/5 font-bold text-sm px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+            <span>TRY MAGIC DEMO</span>
+            <span class="text-xs font-mono bg-cobalt/10 px-2 py-0.5 rounded">NEW</span>
+          </a>
+        </div>
+
+        <!-- Social Proof Student Rating Line -->
+        <div class="flex items-center gap-3 pt-1">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <span class="text-xs font-medium text-ink/75">
+            <strong>4.9/5 Rating</strong> based on 1,200+ student ratings across IITs, DU & NID
+          </span>
+        </div>
+
+        <!-- 4 Trust Badges Grid (Enhanced Mobile 2x2) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-4 border-t border-gridline">
+          <div class="bg-white/70 hover:bg-white border border-gridline/80 p-2.5 rounded-lg flex items-center gap-2.5 transition">
+            <div class="w-8 h-8 rounded-md bg-cobalt/10 text-cobalt flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold block uppercase tracking-wider text-navy leading-tight">INSTANT</span>
+              <span class="text-[10px] text-ink/70 block leading-none">Under 24 Hrs</span>
+            </div>
+          </div>
+
+          <div class="bg-white/70 hover:bg-white border border-gridline/80 p-2.5 rounded-lg flex items-center gap-2.5 transition">
+            <div class="w-8 h-8 rounded-md bg-cobalt/10 text-cobalt flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold block uppercase tracking-wider text-navy leading-tight">100% SAFE</span>
+              <span class="text-[10px] text-ink/70 block leading-none">Your Own Email</span>
+            </div>
+          </div>
+
+          <div class="bg-white/70 hover:bg-white border border-gridline/80 p-2.5 rounded-lg flex items-center gap-2.5 transition">
+            <div class="w-8 h-8 rounded-md bg-cobalt/10 text-cobalt flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold block uppercase tracking-wider text-navy leading-tight">SUPPORT</span>
+              <span class="text-[10px] text-ink/70 block leading-none">WhatsApp Help</span>
+            </div>
+          </div>
+
+          <div class="bg-white/70 hover:bg-white border border-gridline/80 p-2.5 rounded-lg flex items-center gap-2.5 transition">
+            <div class="w-8 h-8 rounded-md bg-cobalt/10 text-cobalt flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold block uppercase tracking-wider text-navy leading-tight">7-DAY</span>
+              <span class="text-[10px] text-ink/70 block leading-none">Full Refund</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Animated Hero Collage (Fully Responsive for Mobile & Desktop) -->
+      <div class="lg:col-span-6 reveal reveal-right mt-4 lg:mt-0">
+        <div id="hero-parallax" class="relative w-full max-w-[360px] sm:max-w-md lg:max-w-none mx-auto h-[400px] sm:h-[480px] select-none">
+          
+          <!-- Decorative Blueprint Grid Frame -->
+          <div class="absolute inset-2 border-2 border-dashed border-cobalt/30 rounded-2xl pointer-events-none"></div>
+
+          <!-- Twinkling Sparkle Star Top-Left -->
+          <svg class="w-7 h-7 sm:w-8 sm:h-8 text-cobalt absolute top-4 left-6 animate-star z-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 1L14.5 9.5L23 12L14.5 14.5L12 23L9.5 14.5L1 12L9.5 9.5L12 1Z"/>
+          </svg>
+
+          <!-- Handwritten Sticky Callout -->
+          <div data-depth="0.03" class="parallax-layer absolute top-5 left-4 z-20 -rotate-3 bg-paper/90 backdrop-blur-sm border border-cobalt/30 px-3 py-1.5 rounded-lg shadow-sm">
+            <p class="font-hand text-xl sm:text-2xl leading-tight text-navy">
+              Same Canva.<br/>
+              More Possibilities.<br/>
+              <span class="text-cobalt font-bold">At Student Prices.</span>
+            </p>
+          </div>
+
+          <!-- Floating Mini Cloud Art Top -->
+          <div data-depth="0.06" class="parallax-layer absolute top-2 right-4 sm:right-12 w-24 sm:w-28 h-16 sm:h-20 rounded-lg border border-cobalt/40 overflow-hidden shadow-md animate-float-reverse z-10 halftone-dots">
+            <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=400&q=80" alt="Clouds Blueprint" class="w-full h-full object-cover cobalt-halftone" />
+          </div>
+
+          <!-- Classical Statue Bust (Main Hero Visual) -->
+          <div data-depth="0.04" class="parallax-layer absolute top-12 right-2 sm:right-6 w-52 sm:w-72 lg:w-80 h-72 sm:h-96 rounded-2xl overflow-hidden animate-float-slow z-10 halftone-dots border-2 border-cobalt/30 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=800&q=80" alt="Classical Statue" class="w-full h-full object-cover cobalt-halftone" />
+          </div>
+
+          <!-- Floating Canva UI Window Card with Live Video -->
+          <div data-depth="0.08" class="parallax-layer absolute bottom-3 left-1 sm:left-4 w-[300px] sm:w-[350px] bg-white/95 backdrop-blur-md border-2 border-cobalt rounded-xl shadow-2xl p-3 z-30 animate-float-reverse">
+            <div class="flex items-center justify-between border-b border-gridline pb-2 mb-2">
+              <div class="flex items-center gap-1.5">
+                <span class="font-serif italic font-bold text-cobalt text-base sm:text-lg">Canva</span>
+                <span class="bg-cobalt text-white text-[9px] font-mono px-1.5 py-0.2 rounded font-bold">PRO</span>
+                <span class="text-[9px] font-mono bg-red-100 text-red-600 px-1 py-0.2 rounded font-bold flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-ping"></span>
+                  <span>4K VIDEO</span>
+                </span>
+              </div>
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              </div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 items-center">
+              <!-- Mini Sidebar -->
+              <div class="col-span-4 space-y-1 text-[9px] sm:text-[10px] font-mono text-ink/80">
+                <div class="px-1.5 py-1 bg-cobalt text-white rounded font-bold">⌂ Video</div>
+                <div class="px-1.5 py-0.5 hover:text-cobalt cursor-pointer">⊞ Reels</div>
+                <div class="px-1.5 py-0.5 hover:text-cobalt cursor-pointer">✦ Beat Sync</div>
+                <div class="px-1.5 py-0.5 hover:text-cobalt cursor-pointer">Audio FX</div>
+                <div class="px-1.5 py-0.5 hover:text-cobalt cursor-pointer">4K Export</div>
+              </div>
+              <!-- Video Preview Inside UI Canvas -->
+              <div class="col-span-8 relative rounded-lg overflow-hidden bg-navy text-white p-2.5 h-36 sm:h-40 flex flex-col justify-between shadow-inner">
+                <!-- Video Element Playing Live Campus Footage -->
+                <video autoplay muted loop playsinline poster="./video_thumb.jpg" class="absolute inset-0 w-full h-full object-cover">
+                  <source src="./8530277-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                </video>
+                <!-- Cinematic Dark Gradient Overlay for Readability -->
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-black/40"></div>
+
+                <div class="relative z-10 flex items-center justify-between">
+                  <span class="text-[8px] sm:text-[9px] font-mono uppercase tracking-widest bg-cobalt/90 backdrop-blur px-1.5 py-0.5 rounded font-bold">
+                    UNLOCKED 4K
+                  </span>
+                  <span class="text-[8px] font-mono bg-black/60 backdrop-blur px-1 py-0.5 rounded text-white/80">
+                    2160p • 25fps
+                  </span>
+                </div>
+
+                <div class="relative z-10">
+                  <p class="font-serif font-bold text-xs sm:text-sm leading-tight text-white drop-shadow">
+                    Design & Cut<br/>Campus Reels
+                  </p>
+                </div>
+
+                <!-- Live Mini Scrubber & Pro Status -->
+                <div class="relative z-10 space-y-1">
+                  <div class="w-full bg-white/25 h-1 rounded-full overflow-hidden">
+                    <div class="bg-cobalt h-full w-3/4 animate-pulse"></div>
+                  </div>
+                  <div class="flex items-center justify-between text-[8px] font-mono">
+                    <span class="text-white/80">00:14 / 00:32</span>
+                    <span class="text-amber-300 font-bold">NO WATERMARK ✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Floating Badges (Attraction Boosters) -->
+          <div class="absolute -bottom-2 right-2 sm:right-6 bg-white border-2 border-cobalt text-cobalt px-3 py-1.5 rounded-full shadow-lg text-xs font-mono font-bold z-40 animate-badge-bounce flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-cobalt shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"/></svg>
+            <span>Magic Resize 1-Click</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 3. ANIMATED METRICS COUNTER BAR ================= -->
+  <section class="blueprint-border-b bg-white/80 py-8 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gridline">
+        
+        <div class="pt-3 md:pt-0">
+          <div class="font-serif font-extrabold text-3xl sm:text-4xl text-cobalt tracking-tight">
+            <span class="counter" data-target="5000">0</span>+
+          </div>
+          <p class="font-mono text-xs uppercase tracking-wider text-navy mt-1 font-bold">Students Enrolled</p>
+          <span class="text-[11px] text-ink/70">Across 60+ Indian Colleges</span>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="font-serif font-extrabold text-3xl sm:text-4xl text-cobalt tracking-tight">
+            ₹<span class="counter" data-target="3700">0</span>+
+          </div>
+          <p class="font-mono text-xs uppercase tracking-wider text-navy mt-1 font-bold">Saved Per Student</p>
+          <span class="text-[11px] text-ink/70">86% Off Standard Price</span>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="font-serif font-extrabold text-3xl sm:text-4xl text-cobalt tracking-tight">
+            <span class="counter" data-target="15">0</span>m
+          </div>
+          <p class="font-mono text-xs uppercase tracking-wider text-navy mt-1 font-bold">Avg. Activation Time</p>
+          <span class="text-[11px] text-ink/70">Fast Email Invite</span>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="font-serif font-extrabold text-3xl sm:text-4xl text-cobalt tracking-tight">
+            4.<span class="counter" data-target="9">0</span>★
+          </div>
+          <p class="font-mono text-xs uppercase tracking-wider text-navy mt-1 font-bold">Student Satisfaction</p>
+          <span class="text-[11px] text-ink/70">1,200+ Genuine Ratings</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. CAMPUS MARQUEE SLIDER ================= -->
+  <section class="py-7 blueprint-border-b overflow-hidden bg-paper/60">
+    <div class="max-w-6xl mx-auto px-4 mb-5 text-center">
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-ink/70 font-semibold">
+        TRUSTED BY 5,000+ STUDENTS ACROSS TOP CAMPUSES
+      </p>
+    </div>
+
+    <!-- Smooth Infinite Sliding Track -->
+    <div class="relative w-full overflow-hidden">
+      <!-- Gradient Fades on Edges -->
+      <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-paper to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-paper to-transparent z-10 pointer-events-none"></div>
+
+      <div class="animate-marquee flex items-center gap-10 sm:gap-14 px-6">
+        <!-- Set 1 -->
+        <div class="flex items-center gap-10 sm:gap-14 shrink-0">
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITB</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Bombay</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITD</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Delhi</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">BITS</div>
+            <span class="text-xs font-semibold text-ink/80">BITS Pilani</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">NID</div>
+            <span class="text-xs font-semibold text-ink/80">NID Ahmedabad</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITM</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Madras</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">VIT</div>
+            <span class="text-xs font-semibold text-ink/80">VIT Vellore</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">DU</div>
+            <span class="text-xs font-semibold text-ink/80">Delhi University</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">SRM</div>
+            <span class="text-xs font-semibold text-ink/80">SRM Institute</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IIM</div>
+            <span class="text-xs font-semibold text-ink/80">IIM Bangalore</span>
+          </div>
+        </div>
+
+        <!-- Set 2 (Seamless loop) -->
+        <div class="flex items-center gap-10 sm:gap-14 shrink-0" aria-hidden="true">
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITB</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Bombay</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITD</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Delhi</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">BITS</div>
+            <span class="text-xs font-semibold text-ink/80">BITS Pilani</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">NID</div>
+            <span class="text-xs font-semibold text-ink/80">NID Ahmedabad</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IITM</div>
+            <span class="text-xs font-semibold text-ink/80">IIT Madras</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">VIT</div>
+            <span class="text-xs font-semibold text-ink/80">VIT Vellore</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">DU</div>
+            <span class="text-xs font-semibold text-ink/80">Delhi University</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">SRM</div>
+            <span class="text-xs font-semibold text-ink/80">SRM Institute</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full border-2 border-cobalt/70 bg-white flex items-center justify-center font-serif font-bold text-xs text-cobalt group-hover:bg-cobalt group-hover:text-white transition shadow-sm">IIM</div>
+            <span class="text-xs font-semibold text-ink/80">IIM Bangalore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. INTERACTIVE MAGIC DEMO / PLAYGROUND ================= -->
+  <section id="playground" class="py-14 blueprint-border-b bg-white/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal reveal-up">
+        <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+          INTERACTIVE SHOWCASE
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl text-navy mt-2.5">
+          EXPERIENCE CANVA PRO'S <span class="text-cobalt">MAGIC REMOVER</span>
+        </h2>
+        <p class="text-ink/80 text-sm sm:text-base mt-2">
+          Drag the slider below to see how Canva Pro erases backgrounds with a single click. No Photoshop skills needed.
+        </p>
+      </div>
+
+      <!-- Before-After Comparison Interactive Card -->
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl border-2 border-cobalt/50 shadow-xl overflow-hidden reveal reveal-scale">
+        <div class="bg-paper border-b border-gridline px-4 py-2.5 flex items-center justify-between text-xs font-mono">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-cobalt"></span>
+            <span class="font-bold text-navy">Canva Pro AI Studio — 1-Click Background Remover</span>
+          </div>
+          <span class="text-cobalt font-bold hidden sm:inline">← Drag slider to compare →</span>
+        </div>
+
+        <div id="magicSlider" class="slider-container relative h-[300px] sm:h-[420px] bg-slate-900 overflow-hidden">
+          
+          <!-- Background: After (Cutout with transparent checkerboard + blueprint grid) -->
+          <div class="absolute inset-0 bg-[#F4F6FF] flex items-center justify-center" style="background-image: radial-gradient(rgba(0, 26, 255, 0.25) 1.5px, transparent 1.5px); background-size: 16px 16px;">
+            <div class="relative w-full h-full flex items-center justify-center">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Student Portrait Cutout" class="w-full h-full object-cover cobalt-halftone" />
+              <div class="absolute top-4 right-4 bg-cobalt text-white text-[10px] sm:text-[11px] font-mono font-bold px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-1.5">
+                <span>BG REMOVED (CANVA PRO)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foreground: Before (Original Image clipped by slider) -->
+          <div id="sliderAfter" class="slider-after-image">
+            <div class="relative w-full h-full">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Original Student Portrait" class="w-full h-full object-cover filter brightness-95" />
+              <div class="absolute top-4 left-4 bg-navy/90 text-white text-[10px] sm:text-[11px] font-mono font-bold px-3 py-1 rounded-full shadow-md z-10">
+                ORIGINAL PHOTO (FREE)
+              </div>
+            </div>
+          </div>
+
+          <!-- Draggable Divider Line & Handle -->
+          <div id="sliderHandle" class="slider-handle"></div>
+
+        </div>
+
+        <div class="p-4 bg-paper/90 border-t border-gridline flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <div class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <span class="text-ink/80">Included in all Elvano student licenses without daily limits</span>
+          </div>
+          <a href="#pricing" class="btn-cobalt bg-cobalt text-white font-bold px-4 py-2 rounded-lg flex items-center gap-1.5 text-xs">
+            <span>UNLOCK THIS FEATURE @ ₹599</span>
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 5.5. CANVA PRO 4K VIDEO STUDIO ================= -->
+  <section id="video-studio" class="py-16 blueprint-border-b bg-paper relative overflow-hidden">
+    <!-- Ambient Blueprint Glow Behind Player -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-cobalt/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 reveal reveal-up">
+        <span class="inline-flex items-center gap-2 bg-cobalt/10 border border-cobalt/30 text-cobalt px-3.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider">
+          <svg class="w-3.5 h-3.5 text-cobalt shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6.47L17.53 12 4 17.53V6.47M2 4v16l20-8L2 4z"/></svg>
+          CANVA PRO 4K VIDEO STUDIO
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mt-3 leading-tight">
+          EDIT, CUT & EXPORT IN <span class="text-cobalt">4K UHD.</span><br/>
+          ZERO WATERMARKS.
+        </h2>
+        <p class="text-ink/80 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
+          From college fest aftermovies to high-retention Instagram reels and presentation pitches. Create cinematic videos with multi-track timeline editing, audio beat sync, and uncapped 4K 60FPS exports.
+        </p>
+      </div>
+
+      <!-- Authentic Canva Pro Video Editor Mockup Window -->
+      <div class="bg-navy rounded-2xl border-2 border-cobalt/50 shadow-2xl overflow-hidden reveal reveal-scale">
+        
+        <!-- Editor Top Chrome Bar -->
+        <div class="bg-[#0b1536] border-b border-cobalt/30 px-3 sm:px-5 py-3 flex items-center justify-between gap-3 text-white">
+          <!-- Left: Canva Brand + Project Title -->
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="flex items-center gap-1.5 shrink-0">
+              <span class="font-serif italic font-bold text-white text-base">Canva</span>
+              <span class="bg-cobalt text-white text-[9px] font-mono px-1.5 py-0.5 rounded font-bold">PRO</span>
+            </div>
+            <div class="h-4 w-px bg-white/20 hidden sm:block shrink-0"></div>
+            <div class="min-w-0 truncate">
+              <span class="text-xs sm:text-sm font-mono text-white/90 truncate block">Campus_Fest_2025_Reel_4K.mp4</span>
+              <span class="text-[10px] font-mono text-emerald-400 hidden sm:inline flex items-center gap-1">
+                <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Saved to 1TB Cloud
+              </span>
+            </div>
+          </div>
+
+          <!-- Center: Ratio Selector (Desktop) -->
+          <div class="hidden md:flex items-center gap-1 bg-white/10 rounded-lg p-1 text-[11px] font-mono">
+            <span class="bg-cobalt px-2.5 py-1 rounded text-white font-bold">16:9 Landscape (4K)</span>
+            <span class="text-white/60 hover:text-white px-2 py-1 cursor-pointer transition">9:16 Reel</span>
+            <span class="text-white/60 hover:text-white px-2 py-1 cursor-pointer transition">1:1 Square</span>
+          </div>
+
+          <!-- Right: Pro Download Badge -->
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="hidden sm:inline-flex items-center gap-1.5 text-[11px] font-mono font-bold bg-amber-400/20 text-amber-300 border border-amber-400/40 px-2.5 py-1 rounded-md">
+              <svg class="w-3 h-3 fill-amber-300" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>4K UNLOCKED</span>
+            </span>
+            <a href="#pricing" class="btn-cobalt bg-cobalt hover:bg-blue-600 text-white text-xs font-mono font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow transition">
+              <span>Export</span>
+              <span class="text-xs">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Main Video Viewport Canvas with HUD Overlays -->
+        <div class="relative bg-black group aspect-video max-h-[500px] w-full flex items-center justify-center overflow-hidden">
+          
+          <!-- The 4K Video Element -->
+          <video 
+            id="studioVideo" 
+            class="w-full h-full object-cover cursor-pointer" 
+            playsinline 
+            muted 
+            loop 
+            preload="metadata"
+            poster="./video_thumb.jpg">
+            <source src="./8530277-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+
+          <!-- Floating HUD Top Left: Quality Info -->
+          <div class="absolute top-3 left-3 sm:top-5 sm:left-5 flex flex-wrap items-center gap-2 z-20 pointer-events-none">
+            <span class="bg-navy/85 backdrop-blur-md border border-cobalt/40 text-white text-[10px] sm:text-xs font-mono font-bold px-2.5 py-1 rounded-md flex items-center gap-1.5 shadow-lg">
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+              <span>4K UHD • 2160p</span>
+            </span>
+            <span class="bg-navy/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] sm:text-xs font-mono px-2 py-1 rounded-md hidden sm:inline-block">
+              25 FPS • HDR10
+            </span>
+          </div>
+
+          <!-- Floating HUD Top Right: Audio Waveform Visualizer -->
+          <div class="absolute top-3 right-3 sm:top-5 sm:right-5 flex items-center gap-2 z-20 pointer-events-none">
+            <div class="bg-navy/85 backdrop-blur-md border border-cobalt/40 text-white text-[10px] sm:text-xs font-mono px-3 py-1 rounded-md flex items-center gap-2 shadow-lg">
+              <span class="text-cobalt font-bold">BEAT SYNC</span>
+              <!-- Equalizer Bars -->
+              <div class="flex items-end gap-0.5 h-3">
+                <span class="w-0.5 bg-cobalt animate-pulse h-2"></span>
+                <span class="w-0.5 bg-cobalt animate-pulse h-3" style="animation-delay: 150ms"></span>
+                <span class="w-0.5 bg-cobalt animate-pulse h-1" style="animation-delay: 300ms"></span>
+                <span class="w-0.5 bg-cobalt animate-pulse h-3" style="animation-delay: 450ms"></span>
+                <span class="w-0.5 bg-cobalt animate-pulse h-2" style="animation-delay: 200ms"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Big Play Button (when paused or hovered) -->
+          <button 
+            id="centerPlayBtn" 
+            aria-label="Play or pause video"
+            class="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cobalt/90 hover:bg-cobalt text-white flex items-center justify-center shadow-2xl transition-all duration-300 transform hover:scale-110 z-20 focus:outline-none opacity-80 group-hover:opacity-100">
+            <svg id="centerPlayIcon" class="w-8 h-8 sm:w-10 sm:h-10 ml-1 fill-white" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+
+          <!-- Watermark-Free Official Badge Overlay -->
+          <div class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20 pointer-events-none">
+            <div class="bg-emerald-500/90 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-mono font-bold px-2.5 py-1 rounded-md shadow flex items-center gap-1.5">
+              <span>NO CANVA WATERMARK</span>
+              <span>✓</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Video Controls Bar -->
+        <div class="bg-[#0e1738] border-t border-cobalt/30 p-3 sm:p-4 text-white">
+          
+          <!-- Progress Scrubber -->
+          <div class="relative w-full mb-3 group">
+            <input 
+              id="videoProgress" 
+              type="range" 
+              min="0" 
+              max="100" 
+              value="0" 
+              step="0.1" 
+              class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-cobalt focus:outline-none transition-all" />
+          </div>
+
+          <!-- Bottom Controls: Play/Pause, Time, Mute, Fullscreen -->
+          <div class="flex items-center justify-between gap-3">
+            
+            <div class="flex items-center gap-3 sm:gap-4">
+              <!-- Play / Pause Button -->
+              <button id="ctrlPlayBtn" aria-label="Toggle play" class="w-9 h-9 rounded-lg bg-cobalt hover:bg-blue-600 text-white flex items-center justify-center transition">
+                <svg id="ctrlPlayIcon" class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+
+              <!-- Mute / Unmute Button -->
+              <button id="ctrlMuteBtn" aria-label="Toggle sound" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+                <svg id="ctrlMuteIcon" class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+                  <!-- Muted initial icon -->
+                  <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+              </button>
+
+              <!-- Timecode Display -->
+              <div class="font-mono text-xs sm:text-sm text-white/80">
+                <span id="currentTime">00:00</span>
+                <span class="text-white/40">/</span>
+                <span id="durationTime">00:32</span>
+              </div>
+            </div>
+
+            <!-- Right Controls: Speed + Fullscreen -->
+            <div class="flex items-center gap-2 sm:gap-3">
+              <select id="playbackSpeed" aria-label="Playback speed" class="bg-white/10 hover:bg-white/15 text-white text-xs font-mono px-2 py-1.5 rounded-lg border border-white/20 focus:outline-none cursor-pointer">
+                <option value="0.75" class="bg-navy text-white">0.75x</option>
+                <option value="1" selected class="bg-navy text-white">1.0x</option>
+                <option value="1.25" class="bg-navy text-white">1.25x</option>
+                <option value="1.5" class="bg-navy text-white">1.5x</option>
+                <option value="2" class="bg-navy text-white">2.0x</option>
+              </select>
+
+              <!-- Fullscreen Button -->
+              <button id="ctrlFullscreenBtn" aria-label="Fullscreen" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Video Multi-Track Timeline Strip (Mockup) -->
+          <div class="mt-4 pt-3 border-t border-white/10 space-y-1.5">
+            <div class="flex items-center justify-between text-[10px] font-mono text-white/50 mb-1">
+              <span>CANVA PRO MULTI-TRACK EDITOR</span>
+              <span>3 TRACKS ACTIVE • SNAPPING ON</span>
+            </div>
+
+            <!-- Track 1: Video Track -->
+            <div class="flex items-center gap-2">
+              <span class="w-14 sm:w-16 text-[9px] font-mono text-cobalt bg-cobalt/20 px-1 py-0.5 rounded text-center shrink-0">V1 VIDEO</span>
+              <div class="flex-1 h-6 bg-cobalt/30 border border-cobalt/60 rounded flex items-center px-2 text-[10px] font-mono text-white/90 overflow-hidden relative">
+                <span class="truncate">8530277-uhd_campus_vibes_2160p.mp4 [3840x2160]</span>
+                <span class="absolute right-2 text-[9px] text-amber-300 font-bold hidden sm:inline">CUT 01</span>
+              </div>
+            </div>
+
+            <!-- Track 2: Audio Track -->
+            <div class="flex items-center gap-2">
+              <span class="w-14 sm:w-16 text-[9px] font-mono text-emerald-400 bg-emerald-500/20 px-1 py-0.5 rounded text-center shrink-0">A1 AUDIO</span>
+              <div class="flex-1 h-6 bg-emerald-500/20 border border-emerald-500/50 rounded flex items-center px-2 text-[10px] font-mono text-emerald-200 overflow-hidden relative">
+                <span class="truncate">Upbeat_Summer_Indie_Pop_BeatSync.mp3 (Licensed Pro)</span>
+                <span class="absolute right-2 text-[9px] text-emerald-300 font-bold hidden sm:inline">128 BPM</span>
+              </div>
+            </div>
+
+            <!-- Track 3: Overlay / Text Track -->
+            <div class="flex items-center gap-2">
+              <span class="w-14 sm:w-16 text-[9px] font-mono text-amber-300 bg-amber-400/20 px-1 py-0.5 rounded text-center shrink-0">T1 TEXT</span>
+              <div class="flex-1 h-6 bg-amber-400/20 border border-amber-400/50 rounded flex items-center px-2 text-[10px] font-mono text-amber-200 overflow-hidden">
+                <span class="truncate">Animated Title: "Campus Life 2025" (Pro Motion Effect)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 4 Pro Video Superpowers (Grid) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        
+        <div class="hover-card-glow reveal reveal-up delay-100 bg-white/95 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">MAX RESOLUTION</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1">4K 60FPS Video Export</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Export crisp ultra-high-definition video without bitrate compression or free version limits.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-150 bg-white/95 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">AI AUTOMATION</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1">Beat Sync & Sound FX</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Canva Pro matches your cuts to the rhythm of any song automatically with one single click.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-200 bg-white/95 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">1-CLICK MAGIC</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1">Video BG Remover</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Erase busy hostel rooms or outdoor campus backgrounds without needing a green screen.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-250 bg-white/95 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">ZERO ROYALTIES</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1">Stock Audio & B-Roll</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Over 25,000+ premium audio tracks & 4K cinematic b-roll with full commercial licensing included.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Action Prompt Banner -->
+      <div class="mt-8 p-4 bg-cobalt/5 border border-cobalt/20 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div>
+          <span class="font-bold text-navy text-sm block">Start creating cinematic reels & student fest videos today</span>
+          <span class="text-xs text-ink/75">Full video editor unlocked on your personal Canva account for just ₹599/year.</span>
+        </div>
+        <a href="#pricing" class="btn-cobalt bg-cobalt text-white font-bold text-xs px-5 py-2.5 rounded-lg shrink-0 flex items-center gap-2 shadow">
+          <span>GET VIDEO STUDIO PASS</span>
+          <span>→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 6. ALL CANVA PRO FEATURES GRID ================= -->
+  <section id="features" class="py-14 blueprint-border-b">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
+        <!-- Left Heading -->
+        <div class="lg:col-span-5 space-y-3 reveal reveal-left">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-cobalt font-semibold">EVERYTHING UNLOCKED</p>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-navy">
+            ALL CANVA PRO<br/>
+            FEATURES,<br/>
+            <span class="text-cobalt">100% UNLOCKED.</span>
+          </h2>
+        </div>
+        <div class="lg:col-span-7 reveal reveal-right">
+          <p class="text-sm sm:text-base text-ink/80 leading-relaxed">
+            Stop seeing the annoying gold crown icon blocking your creative flow. Get unlimited access to Canva’s complete premium suite directly inside your own account.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 Feature Cards Grid (Enhanced Responsive Layout) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <div class="hover-card-glow reveal reveal-up delay-100 bg-white/90 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">100M+ ASSETS</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1.5">Premium Templates</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Presentations, CVs, case studies, fest posters & pitch decks without watermarks.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-150 bg-white/90 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l3.057-3L12 4l3.943-4L19 3l2 7H3l2-7zm-2 9h18v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">PRO STOCK</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1.5">Pro Elements</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Millions of 4K stock photos, SVGs, audio clips, vectors and motion graphics.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-200 bg-white/90 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">AI POWERED</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1.5">Magic Studio</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            1-click BG remover, Magic Resize for Instagram/LinkedIn, and AI Text-to-Image.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-250 bg-white/90 border border-gridline rounded-xl p-5 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">UNLIMITED SPACE</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1.5">1 TB Cloud Storage</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Store all your high-res design exports, raw footage and folders securely in the cloud.
+          </p>
+        </div>
+
+        <div class="hover-card-glow reveal reveal-up delay-300 bg-white/90 border border-gridline rounded-xl p-5 shadow-sm sm:col-span-2 lg:col-span-1">
+          <div class="w-12 h-12 rounded-xl bg-cobalt/10 text-cobalt flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <span class="text-[10px] font-mono text-cobalt uppercase font-bold tracking-wider">TEAM WORKFLOW</span>
+          <h3 class="font-bold text-base text-navy mt-1 mb-1.5">Brand Kit & Fonts</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">
+            Upload custom college fonts, brand color palettes, logos and collaborate seamlessly.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 7. WHY STUDENTS CHOOSE ELVANO ================= -->
+  <section class="blueprint-border-b overflow-hidden py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Left Animated Illustration Collage -->
+      <div class="lg:col-span-6 relative flex items-center justify-center reveal reveal-left order-2 lg:order-1">
+        
+        <!-- Main Student Studying Image in Cobalt Halftone -->
+        <div class="relative w-full h-[320px] sm:h-[390px] rounded-2xl overflow-hidden border-2 border-cobalt/40 shadow-xl halftone-dots">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Student Designing on Laptop" class="w-full h-full object-cover cobalt-halftone" />
+        </div>
+
+        <!-- Handwritten Floating Text -->
+        <div class="absolute top-4 right-4 sm:right-6 bg-paper/95 backdrop-blur px-3.5 py-2 rounded-xl border border-cobalt/40 shadow-lg -rotate-2 animate-float-slow">
+          <p class="font-hand text-xl sm:text-2xl leading-tight text-cobalt font-bold">
+            Better Designs.<br/>
+            Higher Grades.<br/>
+            More Opportunities.
+          </p>
+        </div>
+
+        <!-- Stacked Books / Project Badges Bottom-Left -->
+        <div class="absolute bottom-3 left-3 sm:left-6 space-y-1.5 animate-float-reverse">
+          <div class="bg-white border-2 border-cobalt px-3 py-1 text-[10px] sm:text-[11px] font-mono font-bold tracking-wider text-navy rounded-lg shadow-md flex items-center gap-1.5">
+            PRESENTATIONS
+          </div>
+          <div class="bg-white border-2 border-cobalt px-3 py-1 text-[10px] sm:text-[11px] font-mono font-bold tracking-wider text-navy rounded-lg shadow-md translate-x-2 flex items-center gap-1.5">
+            RESUMES & CVs
+          </div>
+          <div class="bg-white border-2 border-cobalt px-3 py-1 text-[10px] sm:text-[11px] font-mono font-bold tracking-wider text-navy rounded-lg shadow-md flex items-center gap-1.5">
+            FEST POSTERS
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Checklist Content -->
+      <div class="lg:col-span-6 space-y-5 reveal reveal-right order-1 lg:order-2">
+        <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold uppercase">
+          TRUSTED SINCE 2023
+        </span>
+        
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-navy">
+          WHY 5,000+ STUDENTS<br/>
+          CHOOSE <span class="text-cobalt">ELVANO?</span>
+        </h2>
+
+        <p class="text-sm sm:text-base text-ink/80 leading-relaxed">
+          We understand student life and tight budgets. We provide 100% genuine Canva Pro access with zero hassle, instant delivery, and real humans on WhatsApp if you ever need assistance.
+        </p>
+
+        <ul class="space-y-3 pt-2">
+          <li class="flex items-start gap-3 text-sm font-semibold text-navy bg-white/60 p-2.5 rounded-lg border border-gridline">
+            <span class="w-5 h-5 rounded bg-cobalt text-white flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
+            <div>
+              <span class="block">Pocket-Friendly Pricing (Save ₹3,700+)</span>
+              <span class="text-xs text-ink/70 font-normal">Official ₹4,300/yr vs our student pass at only ₹599/yr.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 text-sm font-semibold text-navy bg-white/60 p-2.5 rounded-lg border border-gridline">
+            <span class="w-5 h-5 rounded bg-cobalt text-white flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
+            <div>
+              <span class="block">Instant Delivery to Your Personal Email</span>
+              <span class="text-xs text-ink/70 font-normal">No shared passwords. You get an official invite directly to your own Canva ID.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 text-sm font-semibold text-navy bg-white/60 p-2.5 rounded-lg border border-gridline">
+            <span class="w-5 h-5 rounded bg-cobalt text-white flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
+            <div>
+              <span class="block">Private & Secure Workspace</span>
+              <span class="text-xs text-ink/70 font-normal">All your designs, resumes and projects remain 100% private to you.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 text-sm font-semibold text-navy bg-white/60 p-2.5 rounded-lg border border-gridline">
+            <span class="w-5 h-5 rounded bg-cobalt text-white flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
+            <div>
+              <span class="block">7-Day Money Back Guarantee</span>
+              <span class="text-xs text-ink/70 font-normal">Not satisfied? We issue an immediate refund, no questions asked.</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="pt-2">
+          <a href="#pricing" class="btn-cobalt inline-flex bg-cobalt text-white font-bold text-sm px-7 py-3.5 rounded-xl items-center gap-2.5 shadow-md">
+            <span>CLAIM YOUR STUDENT PASS</span>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 8. PRICING & PLAN TIERS ================= -->
+  <section id="pricing" class="py-14 blueprint-border-b bg-paper">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal reveal-up">
+        <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+          TRANSPARENT PRICING
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mt-2">
+          SELECT YOUR <span class="text-cobalt">STUDENT PASS</span>
+        </h2>
+        <p class="text-ink/80 text-sm sm:text-base mt-2">
+          No hidden fees, no auto-renewals without consent. Genuine Canva Pro on your own email.
+        </p>
+
+        <!-- Coupon Code Pill with One-Click Copy -->
+        <div class="mt-4 inline-flex items-center gap-2 bg-white border border-cobalt/40 px-3.5 py-1.5 rounded-full shadow-sm text-xs font-mono">
+          <span class="text-navy">Student Code:</span>
+          <span id="couponCode" class="font-bold text-cobalt bg-cobalt/10 px-2 py-0.5 rounded cursor-pointer select-all">CAMPUS2025</span>
+          <button id="copyCouponBtn" class="text-xs bg-navy text-white px-2 py-0.5 rounded font-sans font-semibold hover:bg-cobalt transition">
+            Copy Code
+          </button>
+        </div>
+      </div>
+
+      <!-- 3 Tier Cards (Interactive Selection) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch mb-14">
+        
+        <!-- Card 1: Semester Pass -->
+        <div class="hover-card-glow reveal reveal-up delay-100 bg-white/90 border border-gridline rounded-2xl p-6 flex flex-col justify-between shadow-sm relative">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-ink/60 font-bold block mb-1">SEMESTER PASS</span>
+            <h3 class="font-serif font-bold text-2xl text-navy">6 Months Pro</h3>
+            <p class="text-xs text-ink/70 mt-1 mb-4">Perfect for semester projects & fest seasons.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="font-serif font-extrabold text-4xl text-navy">₹349</span>
+              <span class="text-xs line-through text-ink/50">₹2,150</span>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">SAVE 84%</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-ink/85 border-t border-gridline/60 pt-4 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> 100M+ Premium Templates
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> AI Magic Background Remover
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> 1 TB Cloud Storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> Delivery in 24 Hours
+              </li>
+              <li class="flex items-center gap-2 text-ink/60">
+                <span class="text-ink/40">✕</span> Priority WhatsApp Support
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="triggerConfetti(); alert('Redirecting to secure payment for 6-Month Semester Pass...');" class="w-full bg-white border-2 border-cobalt text-cobalt hover:bg-cobalt hover:text-white font-bold text-xs py-3 rounded-xl transition shadow-sm">
+            SELECT 6 MONTHS →
+          </button>
+        </div>
+
+        <!-- Card 2: 1-Year Pass (MOST POPULAR HIGHLIGHTED) -->
+        <div class="hover-card-glow reveal reveal-up delay-200 bg-white border-2 border-cobalt rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xl relative scale-100 md:-translate-y-2">
+          <!-- Most Popular Badge -->
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-cobalt text-white text-[11px] font-mono font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md animate-glow-pulse">
+            ★ MOST POPULAR — 86% OFF ★
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-mono uppercase tracking-wider text-cobalt font-bold block">FULL YEAR PASS</span>
+              <span class="text-[10px] font-mono bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">BEST VALUE</span>
+            </div>
+            <h3 class="font-serif font-bold text-2xl sm:text-3xl text-navy">1 Year Canva Pro</h3>
+            <p class="text-xs text-ink/70 mt-1 mb-4">Complete uninterrupted Pro access for 365 days.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="font-serif font-extrabold text-5xl text-cobalt">₹599</span>
+              <span class="text-xs line-through text-ink/50">₹4,300</span>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">SAVE 86%</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-ink/85 border-t border-gridline/60 pt-4 mb-6">
+              <li class="flex items-center gap-2 font-medium">
+                <span class="text-cobalt font-bold">✓</span> <strong>Official Canva Pro License</strong>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> Unlimited AI Magic Studio & BG Remover
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> 1 TB Private Cloud Storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> Superfast Delivery (Under 4 Hrs)
+              </li>
+              <li class="flex items-center gap-2 font-medium text-cobalt">
+                <span class="text-cobalt font-bold">✓</span> 24/7 Dedicated WhatsApp Support
+              </li>
+              <li class="flex items-center gap-2 text-emerald-600 font-bold">
+                <span class="text-emerald-600 font-bold">✓</span> 7-Day Money Back Guarantee
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="triggerConfetti(); alert('Redirecting to secure payment for 1-Year Canva Pro Pass @ ₹599...');" class="btn-cobalt w-full bg-cobalt text-white font-extrabold text-sm py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg">
+            <span>CLAIM 1-YEAR PASS NOW</span>
+            <span class="arrow-icon">→</span>
+          </button>
+        </div>
+
+        <!-- Card 3: Lifetime Pass -->
+        <div class="hover-card-glow reveal reveal-up delay-300 bg-white/90 border border-gridline rounded-2xl p-6 flex flex-col justify-between shadow-sm relative">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-ink/60 font-bold block mb-1">LIFETIME ACCESS</span>
+            <h3 class="font-serif font-bold text-2xl text-navy">Lifetime Pass</h3>
+            <p class="text-xs text-ink/70 mt-1 mb-4">One-time payment for your entire student journey.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="font-serif font-extrabold text-4xl text-navy">₹999</span>
+              <span class="text-xs line-through text-ink/50">₹12,900</span>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">ONE-TIME</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-ink/85 border-t border-gridline/60 pt-4 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> Lifetime Uninterrupted Access
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> All Future Canva Pro Features
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> 1 TB Cloud Storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-cobalt font-bold">✓</span> Multi-Device Sync (Phone + Laptop)
+              </li>
+              <li class="flex items-center gap-2 font-medium">
+                <span class="text-cobalt font-bold">✓</span> VIP Priority Support Forever
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="triggerConfetti(); alert('Redirecting to secure payment for Lifetime Pass @ ₹999...');" class="w-full bg-white border-2 border-cobalt text-cobalt hover:bg-cobalt hover:text-white font-bold text-xs py-3 rounded-xl transition shadow-sm">
+            SELECT LIFETIME →
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Comparison Table View -->
+      <div class="pt-6 reveal reveal-up">
+        <div class="text-center mb-6">
+          <h3 class="font-serif font-bold text-2xl sm:text-3xl text-navy">
+            FEATURE BY FEATURE <span class="text-cobalt">COMPARISON</span>
+          </h3>
+          <p class="text-xs sm:text-sm text-ink/70 mt-1">See how Elvano compares directly to official pricing.</p>
+          <p class="md:hidden text-[11px] font-mono text-cobalt mt-2 font-bold animate-pulse">
+            Swipe horizontally to compare all plans (scroll to view)
+          </p>
+        </div>
+
+        <div class="overflow-x-auto custom-scrollbar bg-white/90 backdrop-blur rounded-2xl border border-gridline shadow-lg p-2 sm:p-4">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm min-w-[540px]">
+            <thead>
+              <tr class="border-b border-gridline">
+                <th class="py-3.5 px-4 font-bold text-navy">Feature</th>
+                <th class="py-3.5 px-4 text-center font-medium text-ink/70">Canva Free</th>
+                <th class="py-3.5 px-4 text-center font-bold text-navy">Canva Official</th>
+                <th class="py-3.5 px-4 text-center font-bold text-cobalt bg-cobalt/10 rounded-t-xl border-t-2 border-x-2 border-cobalt">Elvano Student</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gridline/60">
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Premium Templates (100M+)</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold">✓</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ Unlimited</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Stock Photos, Videos & Audio</td>
+                <td class="py-3.5 px-4 text-center text-ink/70">Limited</td>
+                <td class="py-3.5 px-4 text-center text-navy font-medium">Unlimited</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ Unlimited</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Background Remover Tool</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold">✓</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ 1-Click</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Magic Resize for Any Platform</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold">✓</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ Included</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Cloud Storage Capacity</td>
+                <td class="py-3.5 px-4 text-center text-ink/70">5 GB</td>
+                <td class="py-3.5 px-4 text-center text-navy font-medium">1 TB</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ 1 TB</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">Transparent PNG Export</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold">✓</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ Full HD</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-ink/90">WhatsApp Student Support</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-ink/60 font-bold">✕</td>
+                <td class="py-3.5 px-4 text-center text-cobalt font-bold bg-cobalt/5 border-x-2 border-cobalt">✓ 24/7 Human</td>
+              </tr>
+              <tr class="bg-paper/40">
+                <td class="py-4 px-4 font-bold text-navy">Annual Cost</td>
+                <td class="py-4 px-4 text-center font-semibold text-ink/70">₹0</td>
+                <td class="py-4 px-4 text-center font-semibold text-ink/80">₹4,300 / yr</td>
+                <td class="py-4 px-4 text-center font-extrabold text-lg text-cobalt bg-cobalt/10 rounded-b-xl border-b-2 border-x-2 border-cobalt">₹599 / yr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 9. REVIEWS SLIDER (WITH TOUCH SWIPE & DOTS) ================= -->
+  <section id="reviews" class="py-14 blueprint-border-b overflow-hidden bg-white/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Top Header + Working Slider Controls -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4 reveal reveal-up">
+        <div>
+          <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+            REAL STUDENTS, REAL STORIES
+          </span>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-navy mt-2">
+            LOVED BY STUDENTS<br/>
+            <span class="text-cobalt">ACROSS INDIA</span>
+          </h2>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono text-ink/60 hidden sm:inline">Use arrows or swipe</span>
+          <div class="flex items-center gap-2">
+            <button id="slidePrev" aria-label="Previous Review" class="w-11 h-11 rounded-xl border border-cobalt text-cobalt hover:bg-cobalt hover:text-white transition flex items-center justify-center font-bold text-lg shadow-sm">
+              ←
+            </button>
+            <button id="slideNext" aria-label="Next Review" class="w-11 h-11 rounded-xl border border-cobalt text-cobalt hover:bg-cobalt hover:text-white transition flex items-center justify-center font-bold text-lg shadow-sm">
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sliding Carousel Viewport with Touch Gestures -->
+      <div class="overflow-hidden touch-pan-y" id="reviewsContainer">
+        <div id="reviewsTrack" class="flex transition-transform duration-500 ease-out gap-5">
+          
+          <!-- Slide 1 -->
+          <div class="review-card w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white border border-gridline hover:border-cobalt rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-navy text-white font-bold flex items-center justify-center text-sm shadow">A</div>
+                <div>
+                  <h3 class="font-bold text-sm text-navy">Aarav Sharma</h3>
+                  <p class="text-xs text-ink/70">IIT Bombay • 3rd Year Mech</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">VERIFIED</span>
+            </div>
+            <div class="flex text-amber-400 text-sm mb-2.5">★★★★★</div>
+            <p class="text-xs sm:text-sm text-ink/85 leading-relaxed">
+              "Activated on my personal college email within 40 minutes. Made all our fest sponsorship decks with Canva Pro. Saved over ₹3,700!"
+            </p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="review-card w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white border border-gridline hover:border-cobalt rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-cobalt text-white font-bold flex items-center justify-center text-sm shadow">P</div>
+                <div>
+                  <h3 class="font-bold text-sm text-navy">Priya Mukherjee</h3>
+                  <p class="text-xs text-ink/70">Delhi University • Economics</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">VERIFIED</span>
+            </div>
+            <div class="flex text-amber-400 text-sm mb-2.5">★★★★★</div>
+            <p class="text-xs sm:text-sm text-ink/85 leading-relaxed">
+              "Amazing service at such a student-friendly price. The Magic Background remover and transparent PNG downloads are total lifesavers."
+            </p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="review-card w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white border border-gridline hover:border-cobalt rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-navy text-white font-bold flex items-center justify-center text-sm shadow">R</div>
+                <div>
+                  <h3 class="font-bold text-sm text-navy">Rohit Kulkarni</h3>
+                  <p class="text-xs text-ink/70">BITS Pilani • CS</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">VERIFIED</span>
+            </div>
+            <div class="flex text-amber-400 text-sm mb-2.5">★★★★★</div>
+            <p class="text-xs sm:text-sm text-ink/85 leading-relaxed">
+              "Paid with UPI QR, got invite link immediately. All Pro templates and 1TB storage activated. Support answered my WhatsApp question in 2 mins."
+            </p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="review-card w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white border border-gridline hover:border-cobalt rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-cobalt text-white font-bold flex items-center justify-center text-sm shadow">S</div>
+                <div>
+                  <h3 class="font-bold text-sm text-navy">Sneha Rao</h3>
+                  <p class="text-xs text-ink/70">NID Ahmedabad • Graphic Design</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">VERIFIED</span>
+            </div>
+            <div class="flex text-amber-400 text-sm mb-2.5">★★★★★</div>
+            <p class="text-xs sm:text-sm text-ink/85 leading-relaxed">
+              "Designing without watermarks and having unlimited font uploads changed how I build my design portfolio. Don't think twice, just get it!"
+            </p>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="review-card w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white border border-gridline hover:border-cobalt rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-navy text-white font-bold flex items-center justify-center text-sm shadow">K</div>
+                <div>
+                  <h3 class="font-bold text-sm text-navy">Karan Verma</h3>
+                  <p class="text-xs text-ink/70">VIT Vellore • IT</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">VERIFIED</span>
+            </div>
+            <div class="flex text-amber-400 text-sm mb-2.5">★★★★★</div>
+            <p class="text-xs sm:text-sm text-ink/85 leading-relaxed">
+              "Best ₹599 spent this entire semester. It works smoothly on my phone app and my MacBook. 10/10 recommend Elvano to every classmate."
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide Pagination Dots -->
+      <div id="sliderDots" class="flex items-center justify-center gap-2 mt-6"></div>
+
+    </div>
+  </section>
+
+  <!-- ================= 10. HOW IT WORKS ================= -->
+  <section id="how-it-works" class="py-14 blueprint-border-b">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 reveal reveal-up gap-4">
+        <div>
+          <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+            SIMPLE ONBOARDING
+          </span>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl text-navy mt-2">HOW IT WORKS?</h2>
+        </div>
+        <a href="#pricing" class="text-xs font-mono font-bold text-cobalt underline underline-offset-4 hover:opacity-80">
+          CHOOSE YOUR PLAN →
+        </a>
+      </div>
+
+      <!-- 4 Steps with Flowing Connection Line -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="reveal reveal-up delay-100 bg-white/70 border border-gridline hover:border-cobalt rounded-xl p-5 shadow-sm transition">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-cobalt text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+              1
+            </div>
+            <span class="font-mono text-xs text-cobalt font-bold">STEP 01</span>
+          </div>
+          <h3 class="font-bold text-base text-navy mb-1.5">Choose a Plan</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">Select Semester (₹349), 1-Year Pass (₹599) or Lifetime Pass.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="reveal reveal-up delay-200 bg-white/70 border border-gridline hover:border-cobalt rounded-xl p-5 shadow-sm transition">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-cobalt text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+              2
+            </div>
+            <span class="font-mono text-xs text-cobalt font-bold">STEP 02</span>
+          </div>
+          <h3 class="font-bold text-base text-navy mb-1.5">Fast UPI / Card Checkout</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">Pay securely via GPay, PhonePe, Paytm, Cards or NetBanking.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="reveal reveal-up delay-300 bg-white/70 border border-gridline hover:border-cobalt rounded-xl p-5 shadow-sm transition">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-cobalt text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+              3
+            </div>
+            <span class="font-mono text-xs text-cobalt font-bold">STEP 03</span>
+          </div>
+          <h3 class="font-bold text-base text-navy mb-1.5">Get Email Activation</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">Receive an official Canva team invite directly on your personal email.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="reveal reveal-up delay-400 bg-white/70 border border-gridline hover:border-cobalt rounded-xl p-5 shadow-sm transition">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-cobalt text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+              4
+            </div>
+            <span class="font-mono text-xs text-cobalt font-bold">STEP 04</span>
+          </div>
+          <h3 class="font-bold text-base text-navy mb-1.5">Start Creating</h3>
+          <p class="text-xs text-ink/75 leading-relaxed">Enjoy every Canva Pro feature on your laptop, iPad and mobile app.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. FAQ ACCORDION SECTION ================= -->
+  <section id="faq" class="py-14 blueprint-border-b overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- Left Column with Animated Classical Pillars Artwork -->
+      <div class="lg:col-span-5 space-y-4 reveal reveal-left relative">
+        <span class="bg-cobalt/10 text-cobalt px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+          GOT QUESTIONS?
+        </span>
+        <div class="flex items-center gap-3">
+          <h2 class="font-serif font-bold text-4xl sm:text-5xl text-navy">FAQ</h2>
+          <span class="text-cobalt text-3xl font-bold">↗</span>
+        </div>
+        <p class="text-sm text-ink/80 max-w-sm">
+          Clear answers to common questions about accounts, privacy, payment and delivery.
+        </p>
+
+        <!-- Classical Architecture Cobalt Collage -->
+        <div class="relative pt-4 h-64 hidden sm:block">
+          <svg class="w-9 h-9 text-cobalt absolute top-2 right-6 animate-star z-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 1L14.5 9.5L23 12L14.5 14.5L12 23L9.5 14.5L1 12L9.5 9.5L12 1Z"/>
+          </svg>
+          <div class="w-60 h-52 rounded-2xl overflow-hidden border-2 border-cobalt/40 shadow-xl ml-auto mr-8 animate-float-slow halftone-dots">
+            <img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?auto=format&fit=crop&w=600&q=80" alt="Classical Pillars" class="w-full h-full object-cover cobalt-halftone" />
+          </div>
+          <div class="w-32 h-24 rounded-xl border border-cobalt/50 overflow-hidden shadow-lg absolute bottom-2 left-6 animate-float-reverse halftone-dots">
+            <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=300&q=80" alt="Sky Blueprint" class="w-full h-full object-cover cobalt-halftone" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Accordion List (Smooth Grid Animation) -->
+      <div class="lg:col-span-7 divide-y divide-gridline border-t border-b border-gridline reveal reveal-right bg-white/60 rounded-xl p-2 sm:p-4">
+        
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>Is this the genuine, official Canva Pro?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              Yes, 100%! You receive an official Canva invite directly into your own registered email address. You get complete access to 100M+ premium assets, AI Magic Tools, Brand Kits, and 1TB cloud storage.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>Are my designs and projects private?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              Completely private. Neither Elvano nor other members can ever view, edit or access your designs, uploaded photos or drafts unless you explicitly choose to share a link.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>Do I need a new account or can I use my existing email?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              You can use your current personal Canva email! All your past designs will remain completely intact, and Pro features will simply unlock seamlessly.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>How fast is the delivery?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              Most invites are delivered within 15–45 minutes after payment verification, and guaranteed within a maximum of 24 hours.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>Can I use Canva on my phone, iPad and laptop?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              Yes! You can log in on the official Canva app for iOS and Android, as well as on any desktop browser or tablet. Everything syncs instantly in the cloud.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item py-4">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-bold text-sm sm:text-base text-navy hover:text-cobalt transition gap-4">
+            <span>How does the 7-day money back guarantee work?</span>
+            <span class="faq-icon text-cobalt text-xl font-mono font-bold transition-transform duration-300">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner text-xs sm:text-sm text-ink/80 leading-relaxed pt-2">
+              If for any reason you experience any issue activating your Canva Pro access within the first 7 days, just text our WhatsApp support and we will immediately resolve it or issue a 100% full refund.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 12. BOTTOM CTA BANNER ================= -->
+  <section class="relative bg-cobalt text-white py-16 sm:py-20 overflow-hidden">
+    <!-- Subtle Blueprint Grid Overlay -->
+    <div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 36px 36px;"></div>
+
+    <!-- Rotating Wireframe Globe Background -->
+    <div class="absolute -bottom-24 right-4 lg:right-1/4 w-80 sm:w-96 h-80 sm:h-96 opacity-25 pointer-events-none">
+      <svg class="w-full h-full animate-globe" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="0.6">
+        <circle cx="50" cy="50" r="46" />
+        <ellipse cx="50" cy="50" rx="24" ry="46" />
+        <ellipse cx="50" cy="50" rx="46" ry="24" />
+        <line x1="4" y1="50" x2="96" y2="50" />
+        <line x1="50" y1="4" x2="50" y2="96" />
+      </svg>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Left Banner Text -->
+      <div class="lg:col-span-7 space-y-4 reveal reveal-left">
+        <span class="bg-white/20 text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+          LIMITED STUDENT SLOTS AVAILABLE
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-5xl leading-tight">
+          READY TO CREATE<br/>
+          WITHOUT LIMITS?
+        </h2>
+        <p class="text-sm sm:text-base text-white/90 max-w-md leading-relaxed">
+          Upgrade your presentations, resumes and projects today. Join 5,000+ smart Indian students already designing with Elvano.
+        </p>
+      </div>
+
+      <!-- Right CTA & Social Proof -->
+      <div class="lg:col-span-5 flex flex-col sm:items-end justify-center space-y-4 reveal reveal-right">
+        <a href="#pricing" class="btn-cobalt bg-white text-cobalt font-extrabold text-sm sm:text-base px-8 py-4 rounded-xl shadow-2xl flex items-center gap-3 w-full sm:w-max justify-center">
+          <span>GET CANVA PRO @ ₹599</span>
+          <span class="arrow-icon text-lg">→</span>
+        </a>
+
+        <div class="flex items-center gap-3">
+          <div class="flex -space-x-2">
+            <span class="w-8 h-8 rounded-full bg-navy border-2 border-white text-xs font-bold flex items-center justify-center">A</span>
+            <span class="w-8 h-8 rounded-full bg-indigo-600 border-2 border-white text-xs font-bold flex items-center justify-center">P</span>
+            <span class="w-8 h-8 rounded-full bg-blue-500 border-2 border-white text-xs font-bold flex items-center justify-center">R</span>
+            <span class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-white text-xs font-bold flex items-center justify-center">S</span>
+          </div>
+          <p class="text-xs text-white/95">
+            <strong class="font-bold">5,000+ students</strong><br/>enjoying Canva Pro
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 13. FOOTER ================= -->
+  <footer class="bg-paper py-8 text-xs text-ink/70 blueprint-border-t">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+        <div class="flex items-center gap-2">
+          <span class="font-serif font-bold text-xl text-cobalt">ELVANO</span>
+          <span class="text-[9px] font-mono bg-cobalt/10 text-cobalt px-1.5 py-0.5 rounded font-bold">STUDENT PASS</span>
+        </div>
+        <span class="hidden sm:inline text-gridline">|</span>
+        <span class="text-[11px]">Independent digital provider for students. Canva is a registered trademark of Canva Pty Ltd.</span>
+      </div>
+
+      <div class="flex items-center gap-6 font-mono text-xs text-ink/80">
+        <a href="#home" class="hover:text-cobalt transition">Back to Top ↑</a>
+        <a href="#faq" class="hover:text-cobalt transition">Terms & Refund</a>
+        <a href="https://wa.me/?text=Hi%20Elvano%20Support" target="_blank" class="hover:text-cobalt font-bold text-emerald-600 flex items-center gap-1">
+          <span>WhatsApp Help</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WIDGET 1: LIVE RECENT ORDER NOTIFICATION (TOAST) ================= -->
+  <div id="liveOrderToast" class="fixed bottom-16 sm:bottom-6 left-3 sm:left-6 z-40 bg-white/95 backdrop-blur-md border border-cobalt/30 rounded-xl shadow-2xl p-2.5 sm:p-3 max-w-[270px] sm:max-w-[320px] hidden transition-all duration-300">
+    <div class="flex items-start gap-3">
+      <div class="w-8 h-8 rounded-full bg-cobalt text-white flex items-center justify-center font-bold text-xs shrink-0 shadow">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center justify-between">
+          <span class="text-[10px] font-mono font-bold text-emerald-600 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Just Activated
+          </span>
+          <span id="toastTime" class="text-[10px] text-ink/50 font-mono">2m ago</span>
+        </div>
+        <p id="toastMessage" class="text-xs font-semibold text-navy leading-tight mt-0.5 truncate">
+          Rohan S. (IIT Delhi) got Canva Pro
+        </p>
+        <span class="text-[10px] text-cobalt font-mono">Verified Student Purchase ✓</span>
+      </div>
+      <button onclick="document.getElementById('liveOrderToast').classList.add('hidden')" class="text-ink/40 hover:text-navy text-xs">✕</button>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING WIDGET 2: WHATSAPP QUICK CHAT BUTTON ================= -->
+  <a href="https://wa.me/?text=Hi%20Elvano,%20I%20have%20a%20question%20about%20Canva%20Pro%20student%20access." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3.5 shadow-2xl flex items-center gap-2 group transition-all duration-300 hover:scale-105">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span class="text-xs font-bold font-sans hidden group-hover:inline transition-all duration-300 pr-1">
+      WhatsApp Support
+    </span>
+    <!-- Ping indicator -->
+    <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 border-2 border-white rounded-full"></span>
+  </a>
+
+  <!-- ================= FLOATING WIDGET 3: STICKY MOBILE CONVERSION BAR ================= -->
+  <div id="mobileBottomBar" class="mobile-bottom-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-cobalt/30 p-2.5 shadow-2xl flex items-center justify-between gap-3 translate-y-full opacity-0">
+    <div class="flex items-center gap-2 min-w-0">
+      <div class="w-8 h-8 rounded-lg bg-cobalt text-white flex items-center justify-center font-bold text-xs shrink-0">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="truncate">
+        <div class="flex items-center gap-1.5">
+          <span class="font-serif font-bold text-sm text-navy">Canva Pro</span>
+          <span class="text-[9px] bg-cobalt/10 text-cobalt px-1.5 py-0.2 rounded font-mono font-bold">1-YR PASS</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-xs">
+          <span class="font-extrabold text-cobalt">₹599</span>
+          <span class="line-through text-ink/40 text-[10px]">₹4,300</span>
+          <span class="text-[9px] text-emerald-600 font-bold">• Instant Invite</span>
+        </div>
+      </div>
+    </div>
+    <a href="#pricing" class="btn-cobalt bg-cobalt text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1 shrink-0 shadow-md">
+      <span>CLAIM DEAL</span>
+      <span>→</span>
+    </a>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC & ANIMATIONS ================= -->
+  <script>
+    // 1. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerLines = document.querySelectorAll('.hamburger-line');
+    let isMenuOpen = false;
+
+    mobileMenuBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      if (isMenuOpen) {
+        mobileMenu.classList.remove('hidden');
+        hamburgerLines[0].classList.add('rotate-45', 'translate-y-2');
+        hamburgerLines[1].classList.add('opacity-0');
+        hamburgerLines[2].classList.add('-rotate-45', '-translate-y-2');
+      } else {
+        mobileMenu.classList.add('hidden');
+        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+        hamburgerLines[1].classList.remove('opacity-0');
+        hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+      }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        isMenuOpen = false;
+        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+        hamburgerLines[1].classList.remove('opacity-0');
+        hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+      });
+    });
+
+    // 2. Scroll Reveal Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 3. Animated Metric Counters
+    const counters = document.querySelectorAll('.counter');
+    let countersStarted = false;
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersStarted) {
+          countersStarted = true;
+          counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let current = 0;
+            const increment = target / 40;
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.innerText = target;
+                clearInterval(timer);
+              } else {
+                counter.innerText = Math.ceil(current);
+              }
+            }, 30);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    if (counters.length) counterObserver.observe(counters[0].closest('section'));
+
+    // 4. Hero Collage 3D Mouse Parallax
+    const heroParallax = document.getElementById('hero-parallax');
+    if (heroParallax) {
+      const parallaxLayers = heroParallax.querySelectorAll('.parallax-layer');
+      heroParallax.addEventListener('mousemove', (e) => {
+        const rect = heroParallax.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const deltaX = e.clientX - centerX;
+        const deltaY = e.clientY - centerY;
+
+        parallaxLayers.forEach(layer => {
+          const depth = parseFloat(layer.getAttribute('data-depth')) || 0.04;
+          const moveX = deltaX * depth;
+          const moveY = deltaY * depth;
+          layer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+        });
+      });
+
+      heroParallax.addEventListener('mouseleave', () => {
+        parallaxLayers.forEach(layer => {
+          layer.style.transform = 'translate3d(0, 0, 0)';
+          layer.style.transition = 'transform 0.5s ease';
+          setTimeout(() => { layer.style.transition = ''; }, 500);
+        });
+      });
+    }
+
+    // 5. Interactive Before-After Background Remover Slider
+    const magicSlider = document.getElementById('magicSlider');
+    const sliderAfter = document.getElementById('sliderAfter');
+    const sliderHandle = document.getElementById('sliderHandle');
+    let isSliding = false;
+
+    function updateSliderPosition(clientX) {
+      const rect = magicSlider.getBoundingClientRect();
+      let offsetX = clientX - rect.left;
+      if (offsetX < 0) offsetX = 0;
+      if (offsetX > rect.width) offsetX = rect.width;
+      const percentage = (offsetX / rect.width) * 100;
+      magicSlider.style.setProperty('--slider-pct', percentage + '%');
+    }
+
+    if (magicSlider) {
+      magicSlider.addEventListener('mousedown', (e) => {
+        isSliding = true;
+        updateSliderPosition(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isSliding = false; });
+      window.addEventListener('mousemove', (e) => {
+        if (!isSliding) return;
+        updateSliderPosition(e.clientX);
+      });
+
+      // Mobile touch support for slider
+      magicSlider.addEventListener('touchstart', (e) => {
+        isSliding = true;
+        updateSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+      window.addEventListener('touchend', () => { isSliding = false; });
+      window.addEventListener('touchmove', (e) => {
+        if (!isSliding) return;
+        updateSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+    }
+
+    // 6. Student Reviews Slider with Touch Swipe & Dots
+    const reviewsTrack = document.getElementById('reviewsTrack');
+    const prevBtn = document.getElementById('slidePrev');
+    const nextBtn = document.getElementById('slideNext');
+    const sliderDots = document.getElementById('sliderDots');
+    let currentSlide = 0;
+
+    function getVisibleCards() {
+      if (window.innerWidth >= 1024) return 3;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    }
+
+    function createDots() {
+      if (!sliderDots || !reviewsTrack) return;
+      sliderDots.innerHTML = '';
+      const totalCards = reviewsTrack.children.length;
+      const visibleCards = getVisibleCards();
+      const numDots = Math.max(1, totalCards - visibleCards + 1);
+
+      for (let i = 0; i < numDots; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-2.5 h-2.5 rounded-full transition-all ${i === currentSlide ? 'bg-cobalt w-6' : 'bg-gridline'}`;
+        dot.setAttribute('aria-label', `Go to review slide ${i + 1}`);
+        dot.addEventListener('click', () => {
+          currentSlide = i;
+          updateReviewsSlider();
+        });
+        sliderDots.appendChild(dot);
+      }
+    }
+
+    function updateReviewsSlider() {
+      if (!reviewsTrack) return;
+      const totalCards = reviewsTrack.children.length;
+      const visibleCards = getVisibleCards();
+      const maxIndex = Math.max(0, totalCards - visibleCards);
+
+      if (currentSlide > maxIndex) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = maxIndex;
+
+      const cardWidth = reviewsTrack.children[0].offsetWidth;
+      const gap = 20;
+      const offset = currentSlide * (cardWidth + gap);
+      reviewsTrack.style.transform = `translateX(-${offset}px)`;
+
+      // Update dots
+      if (sliderDots && sliderDots.children.length) {
+        Array.from(sliderDots.children).forEach((dot, idx) => {
+          if (idx === currentSlide) {
+            dot.className = 'w-6 h-2.5 rounded-full bg-cobalt transition-all';
+          } else {
+            dot.className = 'w-2.5 h-2.5 rounded-full bg-gridline transition-all';
+          }
+        });
+      }
+    }
+
+    if (nextBtn && prevBtn && reviewsTrack) {
+      nextBtn.addEventListener('click', () => {
+        currentSlide++;
+        updateReviewsSlider();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        currentSlide--;
+        updateReviewsSlider();
+      });
+
+      // Touch Gestures (Swipe for Mobile)
+      let touchStartX = 0;
+      let touchEndX = 0;
+      const reviewsContainer = document.getElementById('reviewsContainer');
+
+      reviewsContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      reviewsContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        const swipeThreshold = 40;
+        if (touchStartX - touchEndX > swipeThreshold) {
+          currentSlide++;
+          updateReviewsSlider();
+        } else if (touchEndX - touchStartX > swipeThreshold) {
+          currentSlide--;
+          updateReviewsSlider();
+        }
+      }
+
+      window.addEventListener('resize', () => {
+        createDots();
+        updateReviewsSlider();
+      });
+
+      createDots();
+      updateReviewsSlider();
+
+      // Auto-slide every 5s with pause on hover/touch
+      let autoSlideTimer = setInterval(() => {
+        currentSlide++;
+        updateReviewsSlider();
+      }, 5000);
+
+      reviewsContainer.addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
+      reviewsContainer.addEventListener('mouseleave', () => {
+        autoSlideTimer = setInterval(() => {
+          currentSlide++;
+          updateReviewsSlider();
+        }, 5000);
+      });
+    }
+
+    // 7. Interactive Smooth FAQ Accordion
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isOpen = content.classList.contains('open');
+
+        // Close all other FAQs
+        document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.faq-icon').forEach(i => {
+          i.textContent = '+';
+          i.style.transform = 'rotate(0deg)';
+        });
+
+        if (!isOpen) {
+          content.classList.add('open');
+          icon.textContent = '✕';
+          icon.style.transform = 'rotate(90deg)';
+        }
+      });
+    });
+
+    // 8. One-Click Copy Coupon Code
+    const copyCouponBtn = document.getElementById('copyCouponBtn');
+    const couponCode = document.getElementById('couponCode');
+    if (copyCouponBtn) {
+      copyCouponBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText('CAMPUS2025');
+        copyCouponBtn.textContent = 'Copied!';
+        copyCouponBtn.classList.remove('bg-navy');
+        copyCouponBtn.classList.add('bg-emerald-600');
+        triggerConfetti();
+        setTimeout(() => {
+          copyCouponBtn.textContent = 'Copy Code';
+          copyCouponBtn.classList.add('bg-navy');
+          copyCouponBtn.classList.remove('bg-emerald-600');
+        }, 2500);
+      });
+    }
+
+    // 9. Sticky Mobile Bottom Conversion Bar (Appears on scroll)
+    const mobileBottomBar = document.getElementById('mobileBottomBar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 380) {
+        mobileBottomBar.classList.remove('translate-y-full', 'opacity-0');
+        mobileBottomBar.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        mobileBottomBar.classList.add('translate-y-full', 'opacity-0');
+        mobileBottomBar.classList.remove('translate-y-0', 'opacity-100');
+      }
+    });
+
+    // 10. Live Social Proof Toast Notifications
+    const liveOrderToast = document.getElementById('liveOrderToast');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastTime = document.getElementById('toastTime');
+
+    const recentOrders = [
+      { name: "Aarav S.", college: "IIT Bombay", plan: "Canva Pro 1-Year", time: "3m ago" },
+      { name: "Priya M.", college: "Delhi University", plan: "Canva Pro 1-Year", time: "7m ago" },
+      { name: "Devansh R.", college: "BITS Pilani", plan: "Canva Lifetime Pass", time: "11m ago" },
+      { name: "Sneha V.", college: "NID Ahmedabad", plan: "Canva Pro 1-Year", time: "16m ago" },
+      { name: "Kunal J.", college: "VIT Vellore", plan: "Semester Pass", time: "21m ago" },
+      { name: "Ananya B.", college: "IIT Madras", plan: "Canva Pro 1-Year", time: "28m ago" }
+    ];
+    let orderIndex = 0;
+
+    function showOrderToast() {
+      if (!liveOrderToast) return;
+      const order = recentOrders[orderIndex % recentOrders.length];
+      toastMessage.innerHTML = `<strong>${order.name}</strong> (${order.college}) got ${order.plan}`;
+      toastTime.textContent = order.time;
+      liveOrderToast.classList.remove('hidden');
+
+      setTimeout(() => {
+        liveOrderToast.classList.add('hidden');
+      }, 5000);
+
+      orderIndex++;
+    }
+
+    setTimeout(() => {
+      showOrderToast();
+      setInterval(showOrderToast, 14000);
+    }, 4000);
+
+    // 11. Lightweight Confetti Cannon Animation
+    const confettiCanvas = document.getElementById('confettiCanvas');
+    const ctx = confettiCanvas.getContext('2d');
+    let confettiParticles = [];
+
+    function resizeConfetti() {
+      confettiCanvas.width = window.innerWidth;
+      confettiCanvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeConfetti);
+    resizeConfetti();
+
+    function triggerConfetti() {
+      const colors = ['#001AFF', '#020F59', '#FFB800', '#059669', '#38BDF8', '#F43F5E'];
+      for (let i = 0; i < 70; i++) {
+        confettiParticles.push({
+          x: window.innerWidth / 2,
+          y: window.innerHeight / 2,
+          r: Math.random() * 5 + 3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 14,
+          gravity: 0.35,
+          alpha: 1,
+          decay: Math.random() * 0.02 + 0.01
+        });
+      }
+    }
+
+    function animateConfetti() {
+      ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+      confettiParticles.forEach((p, idx) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += p.gravity;
+        p.alpha -= p.decay;
+
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+
+        if (p.alpha <= 0) {
+          confettiParticles.splice(idx, 1);
+        }
+      });
+      requestAnimationFrame(animateConfetti);
+    }
+    animateConfetti();
+
+    // 12. Interactive Canva Pro 4K Video Studio Controls
+    const studioVideo = document.getElementById('studioVideo');
+    const centerPlayBtn = document.getElementById('centerPlayBtn');
+    const centerPlayIcon = document.getElementById('centerPlayIcon');
+    const ctrlPlayBtn = document.getElementById('ctrlPlayBtn');
+    const ctrlPlayIcon = document.getElementById('ctrlPlayIcon');
+    const ctrlMuteBtn = document.getElementById('ctrlMuteBtn');
+    const ctrlMuteIcon = document.getElementById('ctrlMuteIcon');
+    const videoProgress = document.getElementById('videoProgress');
+    const currentTimeEl = document.getElementById('currentTime');
+    const durationTimeEl = document.getElementById('durationTime');
+    const playbackSpeed = document.getElementById('playbackSpeed');
+    const ctrlFullscreenBtn = document.getElementById('ctrlFullscreenBtn');
+
+    if (studioVideo) {
+      function formatTime(seconds) {
+        if (isNaN(seconds)) return '00:00';
+        const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+        const s = Math.floor(seconds % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+      }
+
+      const playSvg = '<path d="M8 5v14l11-7z"/>';
+      const pauseSvg = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+      const mutedSvg = '<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>';
+      const unmutedSvg = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>';
+
+      function updatePlayState() {
+        if (studioVideo.paused) {
+          centerPlayIcon.innerHTML = playSvg;
+          ctrlPlayIcon.innerHTML = playSvg;
+          centerPlayBtn.style.opacity = '1';
+        } else {
+          centerPlayIcon.innerHTML = pauseSvg;
+          ctrlPlayIcon.innerHTML = pauseSvg;
+          centerPlayBtn.style.opacity = '0';
+        }
+      }
+
+      function togglePlay() {
+        if (studioVideo.paused) {
+          studioVideo.play().catch(e => console.log('Autoplay prevented', e));
+        } else {
+          studioVideo.pause();
+        }
+        updatePlayState();
+      }
+
+      studioVideo.addEventListener('click', togglePlay);
+      centerPlayBtn.addEventListener('click', togglePlay);
+      ctrlPlayBtn.addEventListener('click', togglePlay);
+
+      studioVideo.addEventListener('play', updatePlayState);
+      studioVideo.addEventListener('pause', updatePlayState);
+
+      studioVideo.addEventListener('loadedmetadata', () => {
+        durationTimeEl.textContent = formatTime(studioVideo.duration);
+      });
+
+      studioVideo.addEventListener('timeupdate', () => {
+        if (studioVideo.duration) {
+          const pct = (studioVideo.currentTime / studioVideo.duration) * 100;
+          videoProgress.value = pct;
+          currentTimeEl.textContent = formatTime(studioVideo.currentTime);
+          durationTimeEl.textContent = formatTime(studioVideo.duration);
+        }
+      });
+
+      videoProgress.addEventListener('input', (e) => {
+        if (studioVideo.duration) {
+          const seekTime = (e.target.value / 100) * studioVideo.duration;
+          studioVideo.currentTime = seekTime;
+        }
+      });
+
+      ctrlMuteBtn.addEventListener('click', () => {
+        studioVideo.muted = !studioVideo.muted;
+        ctrlMuteIcon.innerHTML = studioVideo.muted ? mutedSvg : unmutedSvg;
+      });
+
+      playbackSpeed.addEventListener('change', (e) => {
+        studioVideo.playbackRate = parseFloat(e.target.value);
+      });
+
+      ctrlFullscreenBtn.addEventListener('click', () => {
+        if (studioVideo.requestFullscreen) {
+          studioVideo.requestFullscreen();
+        } else if (studioVideo.webkitRequestFullscreen) {
+          studioVideo.webkitRequestFullscreen();
+        }
+      });
+
+      // Intersection observer for auto-play when in view
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            studioVideo.play().catch(() => {});
+          } else {
+            studioVideo.pause();
+          }
+        });
+      }, { threshold: 0.3 });
+      videoObserver.observe(studioVideo);
+    }
+
+    // Trigger confetti on all primary CTA buttons
+    document.querySelectorAll('.btn-cobalt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        triggerConfetti();
+      });
+    });
+  </script>
+</body>
+</html>
